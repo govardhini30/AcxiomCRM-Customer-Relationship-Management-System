@@ -1,0 +1,2 @@
+@model FollowUp
+@{ ViewData["Title"] = "Schedule Follow-Up"; }<h2>Schedule Follow-Up</h2><form asp-action="Create" method="post"><div asp-validation-summary="All" class="text-danger"></div><input asp-for="FollowUpDate" class="form-control mb-2"/><select asp-for="FollowUpType" class="form-select mb-2"><option>Call</option><option>Meeting</option><option>Email</option><option>Task</option></select><textarea asp-for="Remarks" class="form-control mb-2" placeholder="Remarks"></textarea><button class="btn btn-success">Save</button></form>
